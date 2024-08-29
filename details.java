@@ -1,4 +1,4 @@
-ublic class details{
+public class details{
 	public static void main(String[] args){
     String name = "Thameem";
     int age = 21;
