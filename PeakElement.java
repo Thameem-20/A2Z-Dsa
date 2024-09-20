@@ -19,7 +19,7 @@ public class PeakElement {
     public static void main(String[] args) {
         PeakElement peakFinder = new PeakElement();
         
-        int arr[] = {1, 2, 5, 4, 3, 7, 1}; 
+        int arr[] = {10, 2, 5, 4, 3, 7, 15}; 
         int n = arr.length; 
         
         int peak = peakFinder.peakEle(arr, n); 
