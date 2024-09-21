@@ -1,17 +1,21 @@
-public class reversearray {
-    public static void main(String[] args) {
-        int[] array = {1, 2, 3, 4, 5};
-        reverse(array, array.length);
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + " "); 
-        }
-    }
+public class reversearray{
+    public static void reverse(int arr[], int len){
+        for( int i = 0; i < len/2; i++){
+            int temp = arr[i];
+            arr[i] = arr[len-i-1];
+            arr[len-i-1] = temp;
 
-    public static void reverse(int array[], int len) {
-        for (int i = 0; i < len / 2; ++i) {
-            int temp = array[i];
-            array[i] = array[len - i - 1];
-            array[len - i - 1] = temp;
         }
+
+    }
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5};
+        reverse(arr, arr.length);
+        for(int i = 0; i < arr.length; i++){
+            System.err.print(arr[i]+" ");
+        }
+
+
+        
     }
 }
