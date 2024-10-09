@@ -1,4 +1,4 @@
-public class Minimumstring{
+public class MinimumString{
 
 
 public static int min(int x, int y) 
